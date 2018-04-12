@@ -1,0 +1,25 @@
+{
+  "name": "@splash-cli/show-copy",
+  "version": "1.0.0",
+  "description": "Show unsplash api copyright infos.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "show",
+    "copyright"
+  ],
+  "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "@splash-cli/parse-exif": "^1.0.0",
+    "@splash-cli/print-block": "^1.0.6",
+    "@splash-cli/unit-formatter": "^1.0.0"
+  }
+}
