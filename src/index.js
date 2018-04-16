@@ -2,6 +2,7 @@
 
 import parseExif from '@splash-cli/parse-exif';
 import printBlock from '@splash-cli/print-block';
+import chalk from 'chalk';
 import uFormatter from '@splash-cli/unit-formatter';
 
 const showCopy = (data, info) => {
