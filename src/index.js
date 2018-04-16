@@ -1,9 +1,33 @@
 'use strict';
 
-import parseExif from '@splash-cli/parse-exif';
-import printBlock from '@splash-cli/print-block';
-import chalk from 'chalk';
-import uFormatter from '@splash-cli/unit-formatter';
+const parseExif = require('@splash-cli/parse-exif');
+const printBlock = require('@splash-cli/print-block');
+const chalk = require('chalk');
+
+function uFormatter(num) {
+	if (num > 999999999) {
+		if (num % 1000000000 === 0) {
+			return (num / 1000000000) + 'B';
+		}
+		return (num / 1000000000).toFixed(1) + 'B';
+	}
+
+	if (num > 999999) {
+		if (num % 1000000 === 0) {
+			return (num / 1000000) + 'M';
+		}
+		return (num / 1000000).toFixed(1) + 'M';
+	}
+
+	if (num > 999) {
+		if (num % 1000 === 0) {
+			return (num / 1000) + 'K';
+		}
+		return (num / 1000).toFixed(1) + 'K';
+	}
+
+	return num;
+};
 
 const showCopy = (data, info) => {
 	const user = data.user;
