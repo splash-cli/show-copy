@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-"@splash-cli/parse-exif@^1.0.0":
+"@splash-cli/parse-exif@latest":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@splash-cli/parse-exif/-/parse-exif-1.0.0.tgz#f8887d6f19671be467bde1e619e74d0f5853e8d7"
 
-"@splash-cli/print-block@^1.0.6":
+"@splash-cli/print-block@latest":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@splash-cli/print-block/-/print-block-1.0.6.tgz#f34f51ee03eb2ed512d9996e8703ad3feacb5284"
 
-"@splash-cli/unit-formatter@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@splash-cli/unit-formatter/-/unit-formatter-1.0.0.tgz#6018fba5a9080639e88f8f2f7c10c6009deae970"
+"@splash-cli/unit-formatter@latest":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@splash-cli/unit-formatter/-/unit-formatter-1.0.1.tgz#15ddc0bed45a5aada2794f0f20612cffed93175e"
 
 abbrev@1:
   version "1.1.1"

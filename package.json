@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel src -d build",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "show",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@splash-cli/parse-exif": "latest",
     "@splash-cli/print-block": "latest",
-    "@splash-cli/unit-formatter": "latest",
+    "@splash-cli/unit-formatter": "^1.0.1",
     "chalk": "^2.3.2"
   }
 }
